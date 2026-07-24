@@ -1,11 +1,11 @@
 .aboutSection {
-  padding: 8rem 0;
+  padding: 5rem 0;
   position: relative;
   background-color: transparent;
 }
 
 .aboutCard {
-  padding: 4rem;
+  padding: 3rem;
   margin: 0 auto;
   background-color: var(--surface-color);
   box-shadow: var(--shadow-soft);
