@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Manrope } from "next/font/google";
+import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import { metadata as siteMetadata } from "./metadata";
 
 export const metadata: Metadata = siteMetadata;
 
-const headingFont = Space_Grotesk({
+const headingFont = Outfit({
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap"
 });
 
-const bodyFont = Manrope({
+const bodyFont = Inter({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap"
