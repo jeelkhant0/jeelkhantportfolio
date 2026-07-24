@@ -1,0 +1,38 @@
+.projectsSection {
+  padding: 8rem 0;
+  position: relative;
+  background-color: transparent;
+}
+
+.header {
+  margin-bottom: 4rem;
+  max-width: 600px;
+}
+
+.label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}

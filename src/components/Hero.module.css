@@ -1,0 +1,104 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 5rem;
+  background-color: transparent;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  max-width: 800px;
+}
+
+.greeting {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 3rem;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.ctaGroup {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.primaryButton {
+  padding: 1rem 2.5rem;
+  background: var(--text-main);
+  color: var(--bg-color);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+  border: 1px solid var(--text-main);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.secondaryButton {
+  padding: 1rem 2.5rem;
+  background: transparent;
+  color: var(--text-main);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+  border: 1px solid var(--border-color);
+}
+
+.secondaryButton:hover {
+  border-color: var(--text-main);
+  background: var(--glass-bg);
+}
+
+/* Background Elements */
+.glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: blur(80px);
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.glowSecondary {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+  top: 20%;
+  right: -10%;
+  z-index: 1;
+  filter: blur(60px);
+  border-radius: 50%;
+}

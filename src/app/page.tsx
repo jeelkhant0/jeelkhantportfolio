@@ -13,7 +13,6 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
-        <div className="section-divider" />
         <About />
         <Experience />
         <Projects />

@@ -13,7 +13,7 @@ export type ContactLink = {
   label: string;
   href: string;
   value: string;
-  icon: "mail" | "github" | "linkedin";
+  icon: "mail" | "github" | "linkedin" | "phone";
 };
 
 export type TrustMetric = {
@@ -29,52 +29,63 @@ export type ExperienceItem = {
 };
 
 export const siteConfig = {
-  name: "Jeel Khant",
-  role: "Python Developer building AI-driven systems and intelligent automation tools",
-  location: "United States",
-  email: "hello@jeelpatel.dev",
+  name: "Jeel D. Khant",
+  role: "AI & Software Developer",
+  location: "India",
+  email: "jeelkhant600@gmail.com",
   description:
-    "I design and ship AI-enhanced Python applications, from workflow automation to intelligent backend services that reduce manual effort and improve decision quality.",
-  headline: "Building AI-driven software with Python that automates real work.",
+    "AI-Focused Software Developer with hands-on experience in developing web, AI, and software applications. Passionate about building AI-powered solutions, solving real-world problems, and contributing to innovative software development teams.",
+  headline: "Building AI-powered solutions and robust software applications.",
   heroSummary:
-    "I help teams turn repetitive workflows into reliable automation systems using Python, LLM tooling, and scalable backend architecture.",
+    "I engineer AI-driven web and mobile applications using Python, the MERN Stack, and Flutter to solve real-world problems and streamline business workflows.",
   aboutFocus: [
-    "Production-grade Python backend systems",
-    "LLM and AI workflow integration",
-    "Automation architecture for high-volume operations"
+    "AI & Machine Learning Integration",
+    "Full-Stack Web Development (MERN/Next.js)",
+    "Cross-Platform Mobile Apps (Flutter)"
   ],
   trustMetrics: [
-    { value: "68%", label: "Faster ticket routing" },
-    { value: "75%", label: "Less manual data entry" },
-    { value: "32%", label: "Downtime reduction in pilot" }
+    { value: "30%", label: "Faster review processing" },
+    { value: "4+", label: "Major projects shipped" },
+    { value: "100%", label: "Client satisfaction" }
   ] satisfies TrustMetric[],
   experience: [
     {
-      role: "Python Backend Developer",
-      company: "Tech Solutions Inc.",
-      duration: "2021 - Present",
+      role: "AI/ML & MERN Stack Intern",
+      company: "TejasKP AI Software",
+      duration: "Jan 2026 - Jun 2026",
       description: [
-        "Architected scalable automation workflows using Python.",
-        "Integrated LLM tooling to reduce manual data processing by 75%.",
-        "Designed and maintained RESTful APIs for internal tools."
+        "Built and deployed the AI-based Review Automation System to automate review management and analytics.",
+        "Led the AI/ML domain by mentoring interns, assigning technical tasks, and tracking project progress.",
+        "Collaborated directly with clients to gather requirements, implement custom features, and provide deployment support."
       ]
     },
     {
-      role: "Software Engineering Intern",
-      company: "Startup Co.",
-      duration: "2020 - 2021",
+      role: "Software & App Development Intern",
+      company: "Tankar Solutions (Remote)",
+      duration: "Oct 2025 - Jan 2026",
       description: [
-        "Built data extraction scripts with BeautifulSoup and Pandas.",
-        "Assisted in deploying machine learning models to production."
+        "Engineered cross-platform mobile applications using Flutter and Dart.",
+        "Built 'TrackMyFlight', a Flutter application integrating REST APIs for real-time flight tracking.",
+        "Implemented features across multiple client projects in an Agile environment."
+      ]
+    },
+    {
+      role: "Web Development Intern",
+      company: "InternPe (Remote)",
+      duration: "Oct 2023 - Apr 2024",
+      description: [
+        "Implemented responsive web modules using JavaScript, React.js, and REST APIs.",
+        "Enhanced application performance by improving state management and minimizing unnecessary re-renders.",
+        "Resolved application issues through debugging and structured testing to improve stability."
       ]
     }
   ] satisfies ExperienceItem[],
   sectionCopy: {
     projects:
-      "End-to-end systems focused on measurable outcomes through AI integration and Python automation.",
-    skills: "Capabilities used to build robust AI-driven backend systems.",
+      "A showcase of my recent work in AI automation, full-stack web platforms, and mobile applications.",
+    skills: "Core technical proficiencies used to build end-to-end software solutions.",
     contact:
-      "Open to collaborating on Python backend systems, AI integrations, and process automation initiatives."
+      "Open to collaborating on innovative AI solutions, robust full-stack applications, and software development initiatives."
   },
   ctas: {
     primary: {
@@ -87,8 +98,8 @@ export const siteConfig = {
     }
   },
   footerCta: {
-    title: "Have a workflow that should run itself?",
-    description: "Let's design a practical AI + Python automation solution for your team.",
+    title: "Looking for a dedicated developer?",
+    description: "Let's discuss how I can bring AI and robust software engineering to your team.",
     label: "Start a Conversation",
     href: "#contact"
   },
@@ -101,17 +112,17 @@ export const siteConfig = {
     { label: "Contact", href: "#contact" }
   ] satisfies NavItem[],
   contactLinks: [
-    { label: "Email", value: "hello@jeelpatel.dev", href: "mailto:hello@jeelpatel.dev", icon: "mail" },
+    { label: "Email", value: "jeelkhant600@gmail.com", href: "mailto:jeelkhant600@gmail.com", icon: "mail" },
     { label: "GitHub", value: "github.com/jeelkhant0", href: "https://github.com/jeelkhant0", icon: "github" },
     {
       label: "LinkedIn",
-      value: "linkedin.com/in/jeelpatel",
-      href: "https://linkedin.com/in/jeelpatel",
+      value: "linkedin.com/in/jeelkhant",
+      href: "https://linkedin.com/in/jeelkhant",
       icon: "linkedin"
     }
   ] satisfies ContactLink[],
   socialLinks: [
     { label: "GitHub", href: "https://github.com/jeelkhant0", icon: "github" },
-    { label: "LinkedIn", href: "https://linkedin.com/in/jeelpatel", icon: "linkedin" }
+    { label: "LinkedIn", href: "https://linkedin.com/in/jeelkhant", icon: "linkedin" }
   ] satisfies SocialLink[]
 };

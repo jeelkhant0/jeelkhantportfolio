@@ -1,0 +1,89 @@
+.contactSection {
+  padding: 8rem 0;
+  position: relative;
+  background-color: transparent;
+}
+
+.card {
+  padding: 4rem 3rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--surface-color);
+  box-shadow: var(--shadow-soft);
+  border-radius: 24px;
+}
+
+.label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.description {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
+
+.linksGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contactLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: var(--transition-smooth);
+}
+
+.contactLink:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+  box-shadow: var(--shadow-hover);
+}
+
+.iconWrapper {
+  display: inline-flex;
+  padding: 1rem;
+  background: rgba(99, 102, 241, 0.1);
+  color: var(--primary-color);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.iconWrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+.linkLabel {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.linkValue {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+}

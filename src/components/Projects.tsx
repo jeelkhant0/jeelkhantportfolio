@@ -1,18 +1,19 @@
 import ProjectCard from "./ProjectCard";
 import { projects } from "../data/projects";
 import { siteConfig } from "../data/site";
+import styles from "./Projects.module.css";
 
 export default function Projects() {
   return (
-    <section id="projects" className="section-shell section-alt">
-      <div className="mx-auto max-w-7xl">
-        <div className="mb-10">
-          <p className="text-xs uppercase tracking-[0.2em] text-brand">Projects</p>
-          <h2 className="mt-3 text-3xl font-semibold text-text md:text-4xl">Systems built for measurable impact</h2>
-          <p className="mt-4 max-w-2xl text-muted">{siteConfig.sectionCopy.projects}</p>
+    <section id="projects" className={styles.projectsSection}>
+      <div className="container">
+        <div className={styles.header}>
+          <span className={styles.label}>Projects</span>
+          <h2 className={styles.title}>Systems built for measurable impact</h2>
+          <p className={styles.description}>{siteConfig.sectionCopy.projects}</p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className={styles.grid}>
           {projects.map((project, index) => (
             <ProjectCard key={project.title} project={project} index={index} />
           ))}
